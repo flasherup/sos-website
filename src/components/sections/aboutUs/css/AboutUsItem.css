@@ -1,0 +1,21 @@
+.about-us-item {
+    margin-bottom: 15px;
+}
+
+.about-us-item-image {
+    max-width: 180px;
+}
+
+.about-us-item-image img{
+    width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us-item-image {
+        max-width: 100%;
+    }
+
+    .about-us-item-image img {
+        margin-bottom: 15px;
+    }
+}
