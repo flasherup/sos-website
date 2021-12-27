@@ -1,9 +1,17 @@
-import React from 'react';
-import {Col, Row} from "react-bootstrap";
+import React, {useCallback} from 'react';
+import {Button, Col, Row} from "react-bootstrap";
 
 import './css/Steps.css'
+import {useAppDispatch} from "../../../../store/Hooks";
+import {DIALOG_TYPE_CERTIFICATE} from "../../../../constants";
+import { showDialog } from '../../../../store/dialogs/DialogsSlice';
 
 function Step3() {
+    const dispatch = useAppDispatch();
+    const onClaimClick = useCallback(()=> {
+        dispatch(showDialog(DIALOG_TYPE_CERTIFICATE));
+    }, [dispatch]);
+
     return (
         <Row className={'step3'}>
             <Col >
@@ -18,8 +26,8 @@ function Step3() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col >
-                        TODO initiate claim button
+                    <Col>
+                        <Button onClick={onClaimClick} className={'sos-button'}>Claim Airdrop</Button>
                     </Col>
                 </Row>
             </Col>

@@ -16,3 +16,10 @@ export const processTextReplaces = (text:string) => {
     })
     return res
 }
+
+export const cutString = (src:string, startLng:number, endLng:number):string => {
+    if (src.length <= startLng + endLng) return src;
+    const start = src.substring(1,startLng);
+    const end = src.substring(src.length-endLng);
+    return `${start}...${end}`;
+}

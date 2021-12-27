@@ -30,7 +30,7 @@ export const metamaskRequest = createAsyncThunk<any, MetamaskArgs>(
     async (params, { rejectWithValue }) => {
         const ethereum = (window as WindowInstanceWithEthereum).ethereum;
         if (!ethereum) {
-            return rejectWithValue('Metamask unavailable');
+            return rejectWithValue('Status unavailable');
         }
         return ethereum.request(params);
     }

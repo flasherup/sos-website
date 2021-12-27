@@ -12,22 +12,18 @@ function Claim() {
         <Row id={SECTION_ID_CLAIM} className={'claim section-content'}>
             <Col>
                 <Row>
-                    <Col>
+                    <Col className={'d-flex justify-content-center'}>
                         <h2>CLAIM</h2>
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col md={3}>
                         <Step1/>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
+                    <Col md={6}>
                         <Step2/>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
+                    <Col md={3}>
                         <Step3/>
                     </Col>
                 </Row>

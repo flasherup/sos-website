@@ -9,8 +9,10 @@ import reportWebVitals from './reportWebVitals';
 import LogicProvider, {Logic} from "./logic/LogicProvider";
 import {BrowserRouter} from "react-router-dom";
 import {MetamaskInitialisation} from "./logic/MetamaskInitialisation";
+import {RewardsCalculation} from "./logic/RewardsCalculation";
 const logic:Logic[] = [
-    MetamaskInitialisation
+    MetamaskInitialisation,
+    RewardsCalculation
 ]
 
 ReactDOM.render(

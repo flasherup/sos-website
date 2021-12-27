@@ -2,6 +2,7 @@ import React from 'react';
 import {Col, Row} from "react-bootstrap";
 
 import './css/Steps.css'
+import Status from "./status/Status";
 
 function Step1() {
     return (
@@ -19,7 +20,7 @@ function Step1() {
                 </Row>
                 <Row>
                     <Col >
-                        TODO connect button
+                        <Status/>
                     </Col>
                 </Row>
             </Col>

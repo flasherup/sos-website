@@ -8,7 +8,7 @@ import {hideDialog} from '../../store/dialogs/DialogsSlice';
 import {RootState} from "../../store/MainStore";
 import CloseBtn from '../../images/CloseBtn.svg'
 import {
-    DIALOG_TYPE_FULL_SIZE_CANVAS,
+    DIALOG_TYPE_CERTIFICATE,
     DIALOG_TYPE_MAIN_ERROR,
     DIALOG_TYPE_METAMASK_CONNECTION,
     DIALOG_TYPE_METAMASK_ERROR,
@@ -19,7 +19,7 @@ import {
 } from "../../constants";
 
 import ComingSoon from './comingSoon/ComingSoon';
-import FullSizeCanvas from "./fullSizeCanvas/FullSizeCanvas";
+import Certificate from "./certificate/Certificate";
 
 function Dialog() {
     const dispatch = useAppDispatch();
@@ -76,8 +76,8 @@ function Dialog() {
                 return <div>Error</div>
             case DIALOG_TYPE_MINT:
                 return <ComingSoon/>
-            case DIALOG_TYPE_FULL_SIZE_CANVAS:
-                return <FullSizeCanvas/>
+            case DIALOG_TYPE_CERTIFICATE:
+                return <Certificate/>
         }
         return <div>Modal content</div>
     }
@@ -92,10 +92,10 @@ function Dialog() {
             case DIALOG_TYPE_METAMASK_VALIDATE_SIGN:
                 return 'Metamask'
             case DIALOG_TYPE_METAMASK_ERROR:
-                return 'Metamask Error'
+                return 'Status Error'
             case DIALOG_TYPE_MINT:
                 return 'MINT'
-            case DIALOG_TYPE_FULL_SIZE_CANVAS:
+            case DIALOG_TYPE_CERTIFICATE:
                 return 'Canvas'
         }
         return 'Modal';
