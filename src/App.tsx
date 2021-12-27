@@ -37,7 +37,7 @@ function App() {
 
 function getContent() {
     return (
-        <Container fluid={true}>
+        <Container fluid={true} className={'app'}>
             <Row>
                 <Col><Header/></Col>
             </Row>

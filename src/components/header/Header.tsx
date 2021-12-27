@@ -6,7 +6,7 @@ import './css/Header.css';
 function Header() {
     return (
         <Row className={'header'}>
-            <Col className={'header-buttons d-none d-sm-flex justify-content-xl-end justify-content-md-center justify-content-sm-start'}>
+            <Col className={'d-sm-flex justify-content-end'}>
                 <Metamask />
             </Col>
         </Row>

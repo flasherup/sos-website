@@ -1,6 +1,7 @@
-export const SOCIAL_NETWORKS_TWITTER = 'https://twitter.com/FantomPixels';
-export const SOCIAL_NETWORKS_MEDIUM = 'https://medium.com/@fantompixels';
-export const SOCIAL_NETWORKS_DISCORD = 'https://discord.gg/4hfT7RgrtJ';
+export const SOCIAL_NETWORKS_SNAPSHOT = 'https://snapshot.org/';
+export const SOCIAL_NETWORKS_TWITTER = 'https://twitter.com/';
+export const SOCIAL_NETWORKS_DISCORD = 'https://discord.gg/';
+export const SOCIAL_NETWORKS_ETHERSCAN = 'https://etherscan.io/';
 export const LINK_TO_ERC_2981 = 'https://eips.ethereum.org/EIPS/eip-2981';
 
 export const CONTRACT_INDEX = '0x6fA41c437C1704256A8dE7684Bd6AD329D937413';//TODO change to product contract
@@ -20,7 +21,9 @@ export const DIALOG_TYPE_MINT = 'mint';
 export const DIALOG_TYPE_FULL_SIZE_CANVAS = 'full-size-canvas';
 
 
-export const SECTION_ID_ABOUT_US = 'about-us';
+export const SECTION_ID_MAIN = 'main';
+export const SECTION_ID_CLAIM = 'claim';
+export const SECTION_ID_DISTRIBUTION = 'distribution';
 
 
 export const GAS_FEE_MINT = '0.001';

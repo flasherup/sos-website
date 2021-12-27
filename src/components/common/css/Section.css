@@ -1,9 +1,11 @@
 .section {
-    margin-top: 50px;
-    border-bottom: solid #ffffff;
+    padding-top: 50px;
+}
+
+.section-bkg {
+    background-color: #f2f8fa;
 }
 
 .section-content {
-    max-width: 1024px;
     padding-bottom: 50px;
 }

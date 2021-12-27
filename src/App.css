@@ -8,18 +8,19 @@
 }
 
 body {
-  font-family: Montserrat;
-  word-spacing: 3px;
-  font-style: normal;
-  font-weight: 400;
+  --sos-accent-flont: Montserrat, serif;
+  --sos-content-flont: Dosis;
+  --sos-accent-color: #00c38b;
+  --sos-accent-alt-color: #c7c7c7;
+  font-family: var(--sos-accent-flont);
+  font-size: 18px;
+  font-weight: 500;
   color: #000000;
-  text-transform: uppercase;
 }
 
 .popover-header,
 .popover-body {
-  font-family: Montserrat;
-  text-transform: uppercase;
+  font-family: var(--sos-accent-flont);
 }
 
 img {
@@ -31,11 +32,23 @@ img {
 }
 
 h1 {
-  font-size: 24px;
+  font-family:  var(--sos-accent-flont);
+  color: var(--sos-accent-color);
+  font-size: 90px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family:  var(--sos-accent-flont);
+  color: var(--sos-accent-color);
+  font-size: 60px;
+  font-weight: 800;
+  margin-top: 20px;
 }
 
 h3 {
   font-size: 18px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -58,20 +71,26 @@ a:hover {
   box-shadow: none !important;
 }
 
-.fantom-button,
-.fantom-button:focus {
+.sos-button,
+.sos-button:focus {
   opacity: 1;
-  border-width: 2px;
-  border-color: white;
-  background-color: black;
+  border-width: 0;
+  background-color: var(--sos-accent-color);
   cursor: pointer;
   box-shadow: none !important;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 10px 20px;
-  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.fantom-button:disabled {
+.sos-button:hover,
+.sos-button:active {
+  background-color: var(--sos-accent-alt-color);
+  color: black;
+}
+
+.sos-button:disabled {
   opacity: 1;
   border-width: 2px;
   border-color: #c7c7c7;
@@ -83,15 +102,8 @@ a:hover {
   color: #c7c7c7;
 }
 
-.fantom-button:hover,
-.fantom-button:active {
-  background-color: white;
-  border-color: white;
-  color: black;
-}
-
-.fantom-button-secondary,
-.fantom-button-secondary:focus {
+.sos-button-secondary,
+.sos-button-secondary:focus {
   opacity: 1;
   border-width: 2px;
   border-color: #c2c2c2;
@@ -103,7 +115,7 @@ a:hover {
   color: #c2c2c2;
 }
 
-.fantom-button-secondary:disabled {
+.sos-button-secondary:disabled {
   opacity: 1;
   border-width: 2px;
   border-color: #898989;
@@ -114,8 +126,8 @@ a:hover {
   color: #898989;
 }
 
-.fantom-button-secondary:hover,
-.fantom-button-secondary:active {
+.sos-button-secondary:hover,
+.sos-button-secondary:active {
   background-color: white;
   border-color: white;
   color: black;
